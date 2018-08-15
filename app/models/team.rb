@@ -2,8 +2,8 @@ class Team
   attr_accessor :name, :motto
 
   def initialize(attributes)
-    @name = name
-    @motto = motto
+    @name = attributes[:name]
+    @motto = attributes[:motto]
   end
-    
+
 end
