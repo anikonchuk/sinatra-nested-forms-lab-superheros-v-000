@@ -9,7 +9,8 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-
+      raise params.inspect
+      @team = Team.new(params[:team])
       erb :'team'
     end
 
